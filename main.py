@@ -75,7 +75,7 @@ def gks2han(arg:str) -> str:
             case 7: #모음 예외처리
                 pass
 
-def 알아서(arg:str):
+def __알아서__(arg:str):
     ko_exist = False
     for i in arg:
         if i >= 0xac00 and i <= 0xd7a3:
@@ -87,4 +87,4 @@ def 알아서(arg:str):
         return gks2han(arg)
 
 if __name__ == '__main__':
-    print(f'결과               : {알아서(input('테스트용 문장 입력 : ')).capitalize()}')
+    print(f'결과               : {__알아서__(input('테스트용 문장 입력 : ')).capitalize()}')
